@@ -3,7 +3,7 @@ const axios = require('axios')
 const router = express.Router()
 require('dotenv').config()
 
-router.get('/rates',(req,res,next)=>{
+router.get('/api/rates',(req,res,next)=>{
         const base = req.query.base
         const currency = req.query.currency 
         const thirdPartyServiceUrl = process.env.THIRD_PARTY_SERVICE

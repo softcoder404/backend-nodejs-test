@@ -25,7 +25,7 @@ app.get('/',(req,res,next)=>{
         });
     })
 
-app.use('/api',rateRoute)
+app.use('/',rateRoute)
 //end
 
 //handling invalid request error or any kind of the errors thrown
